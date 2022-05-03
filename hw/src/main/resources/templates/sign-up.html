@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Sign-up page</title>
+</head>
+<body>
+<main class="start-content">
+
+                <h1 class="welcome-title">Create an account</h1>
+                <p class="welcome-text">Create your account, it takes less than a minute. If you already have an account <a href="/login" class='text-link'>Login</a></p>
+
+                <form action="/sign-up" class="sign-up-form" id="sign-up-form" method="post" enctype="multipart/form-data">
+
+                        <input type="text"  placeholder="Full name" name="full_name" value="">
+
+                        <input type="text" placeholder="User name" name="username" value="">
+
+                    <input type="password" placeholder="Password" name="password" value="">
+
+
+                    <div class="button-container">
+                       <button>Create</button>
+                    </div>
+                </form>
+
+</main>
+</body>
+</html>
